@@ -87,7 +87,7 @@ export function AIAssistantTab() {
         <Card className="lg:col-span-2 flex flex-col h-[600px]">
           <CardHeader className="border-b border-zinc-200 dark:border-white/5 pb-4">
             <CardTitle className="flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-yellow-400" />
+              <Sparkles className="w-5 h-5 text-amber-700" />
               Intelligence Co-pilot
             </CardTitle>
           </CardHeader>
@@ -96,7 +96,7 @@ export function AIAssistantTab() {
             {messages.map((msg, i) => (
               <div key={i} className={`flex gap-4 ${msg.role === "user" ? "flex-row-reverse" : ""}`}>
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
-                  msg.role === "user" ? "bg-zinc-200 dark:bg-zinc-800" : "bg-yellow-400/10 text-yellow-400"
+                  msg.role === "user" ? "bg-zinc-200 dark:bg-zinc-800" : "bg-amber-700/10 text-amber-700"
                 }`}>
                   {msg.role === "user" ? <User className="w-4 h-4 text-zinc-700 dark:text-zinc-300" /> : <Bot className="w-4 h-4" />}
                 </div>
@@ -111,14 +111,14 @@ export function AIAssistantTab() {
             ))}
           </CardContent>
 
-          <div className="p-4 border-t border-zinc-200 dark:border-white/5 bg-white dark:bg-zinc-950/50">
+          <div className="p-4 border-t border-zinc-200 dark:border-white/5 bg-white dark:bg-zinc-950/50 rounded-b-xl">
             <form onSubmit={handleSend} className="relative">
               <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Ask anything about your restaurant..."
-                className="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl py-3 pl-4 pr-12 text-sm text-zinc-900 dark:text-white placeholder:text-zinc-500 focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/50 transition-all"
+                className="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl py-3 pl-4 pr-12 text-sm text-zinc-900 dark:text-white placeholder:text-zinc-500 focus:outline-none focus:border-amber-700/50 focus:ring-1 focus:ring-amber-700/50 transition-all"
               />
               <button 
                 type="submit"
