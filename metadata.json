@@ -1,0 +1,5 @@
+{
+  "name": "Restaurant Intelligence Dashboard",
+  "description": "A modern SaaS dashboard for restaurant owners integrating POS, Instagram, and Google reviews.",
+  "requestFramePermissions": []
+}
