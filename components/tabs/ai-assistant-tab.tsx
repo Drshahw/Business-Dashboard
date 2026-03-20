@@ -34,7 +34,7 @@ export function AIAssistantTab() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* Left Column: Insights & Actions */}
-        <div className="lg:col-span-1 space-y-6">
+        <div className="lg:col-span-1 flex flex-col h-[600px] gap-6">
           <Card className="border-amber-700/20 shadow-[0_0_30px_-10px_rgba(180,83,9,0.1)]">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center gap-2 text-base">
@@ -60,7 +60,7 @@ export function AIAssistantTab() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="mt-auto">
             <CardHeader className="pb-3">
               <CardTitle className="text-base">Quick Prompts</CardTitle>
             </CardHeader>

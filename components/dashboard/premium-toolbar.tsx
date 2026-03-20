@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, Transition } from 'framer-motion';
-import { LayoutGrid, TrendingUp, Utensils, Layers, Megaphone, Users, Wallet, Sparkles, Sun, Moon } from 'lucide-react';
+import { LayoutGrid, TrendingUp, Utensils, Layers, Megaphone, Users, Wallet, Truck, Sparkles, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
 const transitionConfig: Transition = {
@@ -19,6 +19,7 @@ const tabs = [
   { id: 'marketing', icon: Megaphone, label: 'Marketing' },
   { id: 'customers', icon: Users, label: 'Customers' },
   { id: 'finance', icon: Wallet, label: 'Finance' },
+  { id: 'suppliers', icon: Truck, label: 'Suppliers' },
   { id: 'ai', icon: Sparkles, label: 'AI Assistant' },
 ];
 

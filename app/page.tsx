@@ -11,6 +11,7 @@ import { MarketingTab } from "@/components/tabs/marketing-tab";
 import { CustomersTab } from "@/components/tabs/customers-tab";
 import { FinanceTab } from "@/components/tabs/finance-tab";
 import { AIAssistantTab } from "@/components/tabs/ai-assistant-tab";
+import { SuppliersTab } from "@/components/tabs/suppliers-tab";
 
 export default function Page() {
   const [activeTab, setActiveTab] = useState("dashboard");
@@ -23,13 +24,14 @@ export default function Page() {
       <PremiumToolbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <main className="max-w-7xl mx-auto p-6 mt-4">
-        {activeTab === "dashboard" && <DashboardTab />}
+        {activeTab === "dashboard" && <DashboardTab setActiveTab={setActiveTab} />}
         {activeTab === "sales" && <SalesTab />}
         {activeTab === "menu" && <MenuTab />}
         {activeTab === "operations" && <OperationsTab />}
         {activeTab === "marketing" && <MarketingTab />}
         {activeTab === "customers" && <CustomersTab />}
         {activeTab === "finance" && <FinanceTab />}
+        {activeTab === "suppliers" && <SuppliersTab />}
         {activeTab === "ai" && <AIAssistantTab />}
       </main>
     </div>
